@@ -1,7 +1,11 @@
+import HeroBanner from "@/ui/components/HeroBanner";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to Freixy!</h1>
+    <div className="home bg-[#001d30] h-full">
+      <main>
+        <HeroBanner />
+      </main>
     </div>
   );
 }
