@@ -1,12 +1,21 @@
-export default function CommonHeading({ heading, subHeading }) {
+const textAlignClasses = {
+  left: "text-left",
+  center: "text-center",
+  right: "text-right",
+};
+
+export default function CommonHeading({
+  heading,
+  subHeading,
+  textAlign = "center",
+}) {
+  const alignClass = textAlignClasses[textAlign] || "text-center";
   return (
     <>
-      <h2 className="text-center text-3xl font-bold text-[#001d30cc]">
+      <h2 className={`${alignClass} text-3xl font-bold text-[#001d30cc]`}>
         {heading}
       </h2>
-      <p className="text-center text-lg leading-snug px-0 lg:px-10">
-        {subHeading}
-      </p>
+      <p className={`${alignClass} text-lg leading-snug mt-2`}>{subHeading}</p>
     </>
   );
 }

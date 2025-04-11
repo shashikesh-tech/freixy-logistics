@@ -1,4 +1,5 @@
 import { Outfit, Poppins } from "next/font/google";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "./globals.css";
 
 const outfit = Outfit({

@@ -26,7 +26,7 @@ export default function FunctionName() {
       <div className="flex gap-3 justify-between items-center py-3 mx-auto max-w-7xl w-full px-6 lg:px-4">
         <div className="text-[#d53503]">
           <Link href="#" className="text-4xl font-bold">
-            Fre<span className="text-white hover:text-[#d53503]">ixy</span>
+            Fre<span className="text-white">ixy</span>
           </Link>
         </div>
         <ul className="flex gap-3 lg:gap-8">
