@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function HeroBanner() {
   return (
     <header
-      className="relative flex h-full bg-[#001d30] bg-cover bg-center bg-no-repeat py-4 mb-4"
+      className="relative flex h-full bg-[#001d30] bg-cover bg-bottom bg-no-repeat py-4 mb-4"
       style={{
         backgroundImage:
           "linear-gradient(to right, #001d30cc, #001d30cc), url('/world-map.png')",
@@ -33,7 +33,7 @@ export default function HeroBanner() {
               alt="Hero Image"
               width={200}
               height={200}
-              className="w-full h-full"
+              className="w-full h-full bg-contain"
               priority
             />
           </div>
