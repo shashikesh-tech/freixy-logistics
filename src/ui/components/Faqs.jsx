@@ -105,6 +105,7 @@ export default function Faqs() {
               </span>
               <span className="text-xl">{openIndex === index ? "-" : "+"}</span>
             </button>
+
             <motion.div
               initial={{ height: 0, opacity: 0 }}
               animate={{
